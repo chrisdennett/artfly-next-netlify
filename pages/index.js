@@ -13,7 +13,7 @@ export default function Home() {
 
       <main>
         <Header title="ArtFly" />
-        <p>My attempt to make artfly with next.</p>
+        <p>My attempt to make artfly with next...</p>
       </main>
 
       <Footer />
