@@ -18,7 +18,7 @@ export default function Home() {
           <Link href="./test">Test Page</Link>
         </nav>
         <Header title="ArtFly" />
-        <p>My attempt to make artfly with next...</p>
+        <p>My attempt to make artfly with next.</p>
       </main>
 
       <Footer />
