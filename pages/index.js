@@ -1,23 +1,30 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import styled from "styled-components";
 
 export default function Home() {
   return (
-    <div className="container">
+    <Container>
       <Head>
-        <title>Next.js Starter!</title>
+        <title>ArtFly</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header title="ArtFly" />
+        <p>My attempt to make artfly with next.</p>
       </main>
 
       <Footer />
-    </div>
-  )
+    </Container>
+  );
 }
+
+const Container = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
