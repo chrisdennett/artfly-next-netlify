@@ -1,11 +1,16 @@
-import styles from './Footer.module.css'
+import styled from "styled-components";
 
 export default function Footer() {
   return (
     <>
-      <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
-      </footer>
+      <MyFooter>Chris is figuring out things...</MyFooter>
     </>
-  )
+  );
 }
+
+const MyFooter = styled.footer`
+  border-top: 1px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+`;
