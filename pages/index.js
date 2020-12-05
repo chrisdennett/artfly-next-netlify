@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,6 +13,10 @@ export default function Home() {
       </Head>
 
       <main>
+        <nav>
+          Hello
+          <Link href="./test">Test Page</Link>
+        </nav>
         <Header title="ArtFly" />
         <p>My attempt to make artfly with next...</p>
       </main>
