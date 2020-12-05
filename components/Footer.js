@@ -8,7 +8,7 @@ export default function Footer() {
   );
 }
 
-const MyFooter = styled.footer`
+const MyFooter = styled.div`
   border-top: 1px solid black;
   width: 100%;
   text-align: center;
