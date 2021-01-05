@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProjectHead } from "./ProjectHead";
+import styled from "styled-components";
 
 export const ProjectPreview = ({ project }) => {
   const {
@@ -8,11 +8,21 @@ export const ProjectPreview = ({ project }) => {
   } = project;
 
   return (
-    <article>
-      <ProjectHead meta={meta} />
+    <Article>
+      <h1>{meta.title}</h1>
+      <div>
+        <p>{meta.description}</p>
+        <span>{meta.date}</span>
+      </div>
       <Link href={"/projects" + link}>
         <a>Read more →</a>
       </Link>
-    </article>
+    </Article>
   );
 };
+
+const Article = styled.article`
+  background-color: white;
+  margin: 10px;
+  padding: 1.5em;
+`;
